@@ -9,3 +9,7 @@ insert into EmployeePayroll(Empname,Salary,Startdate) values('Nami',40000,'2022-
 select * from EmployeePayroll;
 --UC5-Retrive particular data
 select * from EmployeePayroll where Startdate between cast ('2020-01-01' as date) and Getdate();
+--UC-6-Update and Add Gender
+alter table EmployeePayroll add Gender char(1) ;
+update EmployeePayroll set Gender='M' where Empname='Rock';
+update EmployeePayroll set Gender='F' where Empname='Nami';
