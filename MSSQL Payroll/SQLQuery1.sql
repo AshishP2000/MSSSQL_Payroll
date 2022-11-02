@@ -20,3 +20,6 @@ select min(Salary) as Min_Salary from EmployeePayroll where Gender='M' group by 
 select max(Salary) as Max_Salary from EmployeePayroll where Gender='M' group by Gender;
 select count(*) as Total_Record from EmployeePayroll where Gender='M' group by Gender;
 select count(*) as Total_Record from EmployeePayroll where Gender='F' group by Gender;
+
+--UC8-
+alter table Employeepayroll add PhoneNumber bigint,Address varchar(200),Department Varchar(100);
