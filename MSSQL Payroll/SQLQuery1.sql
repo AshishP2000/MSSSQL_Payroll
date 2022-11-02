@@ -5,3 +5,5 @@ create table EmployeePayroll(ID int identity(1,1) Primary key,Empname varchar(20
 --UC-3-Insert record
 insert into EmployeePayroll(Empname,Salary,Startdate) values('Rock',25000,'2022-3-4');
 insert into EmployeePayroll(Empname,Salary,Startdate) values('Nami',40000,'2022-03-02');
+--UC4-Retrive all data
+select * from EmployeePayroll;
