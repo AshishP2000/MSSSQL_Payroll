@@ -7,3 +7,5 @@ insert into EmployeePayroll(Empname,Salary,Startdate) values('Rock',25000,'2022-
 insert into EmployeePayroll(Empname,Salary,Startdate) values('Nami',40000,'2022-03-02');
 --UC4-Retrive all data
 select * from EmployeePayroll;
+--UC5-Retrive particular data
+select * from EmployeePayroll where Startdate between cast ('2020-01-01' as date) and Getdate();
